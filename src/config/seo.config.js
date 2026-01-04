@@ -117,6 +117,45 @@ const seoConfig = {
             description: 'Schedule a free IB tutoring consultation in Bali. We support PYP, MYP, and DP students in Canggu, Ubud, Sanur, and online.',
             keywords: ['contact IB tutor', 'free consultation', 'book tutoring', 'Bali tutoring inquiry'],
             path: '/contact'
+        },
+        // Location-specific pages
+        cangguTutoring: {
+            title: 'IB Tutoring Canggu - Expert PYP, MYP & DP Support | Bali IB Tutoring',
+            description: 'Professional IB tutoring in Canggu, Bali. Villa-based PYP, MYP, and Diploma Programme support in Berawa, Batu Bolong, and Pererenan. Flexible scheduling for expat families.',
+            keywords: ['IB tutoring Canggu', 'IB tutor Berawa', 'Canggu Community School tutoring', 'PYP tutoring Canggu', 'MYP tutoring Canggu', 'DP tutoring Canggu', 'villa tutoring Bali', 'digital nomad tutoring'],
+            path: '/canggu-ib-tutoring'
+        },
+        ubudTutoring: {
+            title: 'IB Tutoring Ubud - Expert PYP, MYP & DP Support | Bali IB Tutoring',
+            description: 'Professional IB tutoring in Ubud, Bali. Villa-based PYP, MYP, and Diploma Programme support in the cultural heart of Bali. Expert tutors for Green School and Bali Island School students.',
+            keywords: ['IB tutoring Ubud', 'IB tutor Ubud', 'Green School tutoring', 'PYP tutoring Ubud', 'MYP tutoring Ubud', 'DP tutoring Ubud', 'villa tutoring Ubud', 'holistic education support'],
+            path: '/ubud-ib-tutoring'
+        },
+        sanurTutoring: {
+            title: 'IB Tutoring Sanur - Expert PYP, MYP & DP Support | Bali IB Tutoring',
+            description: 'Professional IB tutoring in Sanur, Bali. Family-friendly PYP, MYP, and Diploma Programme support in Bali\'s relaxed beachside community. Expert tutors for expat families.',
+            keywords: ['IB tutoring Sanur', 'IB tutor Sanur', 'PYP tutoring Sanur', 'MYP tutoring Sanur', 'DP tutoring Sanur', 'expat tutoring Bali', 'beachside tutoring', 'family education Sanur'],
+            path: '/sanur-ib-tutoring'
+        },
+        // Subject-specific pages
+        ibMathTutoring: {
+            title: 'IB Math Tutoring Bali - AA & AI, SL & HL Support | Bali IB Tutoring',
+            description: 'Expert IB Mathematics tutoring in Bali. Specialized support for Analysis & Approaches (AA) and Applications & Interpretation (AI), both Standard and Higher Level. Internal Assessment help.',
+            keywords: ['IB Math tutoring', 'IB Mathematics tutor Bali', 'Math AA tutoring', 'Math AI tutoring', 'IB Math HL', 'IB Math SL', 'Math Internal Assessment', 'IB math help Bali'],
+            path: '/ib-math-tutoring'
+        },
+        // Service-specific pages
+        onlineTutoring: {
+            title: 'Online IB Tutoring - Expert Virtual PYP, MYP & DP Support | Bali IB Tutoring',
+            description: 'Professional online IB tutoring for students worldwide. High-quality virtual PYP, MYP, and Diploma Programme support via Zoom. Flexible scheduling, expert tutors, proven results.',
+            keywords: ['online IB tutoring', 'virtual IB tutor', 'online PYP tutoring', 'online MYP tutoring', 'online DP tutoring', 'remote IB support', 'Zoom tutoring', 'online Extended Essay help'],
+            path: '/online-tutoring'
+        },
+        examPreparation: {
+            title: 'IB Exam Preparation Bali - Intensive Revision & Mock Exams | Bali IB Tutoring',
+            description: 'Comprehensive IB exam preparation in Bali. Intensive revision courses, past papers, mock exams, and expert strategies for PYP, MYP, and DP assessments. Achieve your best IB results.',
+            keywords: ['IB exam preparation', 'IB revision Bali', 'IB mock exams', 'DP exam prep', 'MYP eAssessments', 'IB past papers', 'exam technique', 'IB study skills'],
+            path: '/exam-preparation'
         }
     }
 };

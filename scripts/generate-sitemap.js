@@ -16,6 +16,15 @@ const routes = [
     { path: '/locations', priority: '0.8', changefreq: 'monthly' },
     { path: '/blog', priority: '0.7', changefreq: 'weekly' },
     { path: '/contact', priority: '0.8', changefreq: 'monthly' },
+    // Location-specific pages
+    { path: '/canggu-ib-tutoring', priority: '0.9', changefreq: 'monthly' },
+    { path: '/ubud-ib-tutoring', priority: '0.9', changefreq: 'monthly' },
+    { path: '/sanur-ib-tutoring', priority: '0.9', changefreq: 'monthly' },
+    // Subject-specific pages
+    { path: '/ib-math-tutoring', priority: '0.9', changefreq: 'monthly' },
+    // Service-specific pages
+    { path: '/online-tutoring', priority: '0.9', changefreq: 'monthly' },
+    { path: '/exam-preparation', priority: '0.9', changefreq: 'monthly' },
 ];
 
 function generateSitemap() {
