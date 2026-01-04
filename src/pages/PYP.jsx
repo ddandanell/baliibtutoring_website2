@@ -4,6 +4,7 @@ import { BookOpen, Star, Brain } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 import pypImg from '../assets/pyp_reading_bali_1767354491003.png';
 
 const PYP = () => {
@@ -13,11 +14,14 @@ const PYP = () => {
         { question: "Is this just 'extra homework'?", answer: "No. We focus on 'learning how to learn'. Our goal is to make school easier for them, not to add more burden." }
     ];
 
+    const pageConfig = seoConfig.pages.pyp;
+
     return (
         <>
             <SEO
-                title="IB PYP Tutoring Bali – Primary Years Programme Support"
-                description="Expert PYP tutors in Bali helping children aged 3-12 with literacy, numeracy, and inquiry projects. Building strong foundations for the IB journey."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero

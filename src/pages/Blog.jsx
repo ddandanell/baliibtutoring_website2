@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 import poolImg from '../assets/bali_villa_pool_study_1767354565621.png';
 
 const Blog = () => {
@@ -45,11 +46,14 @@ const Blog = () => {
         }
     ];
 
+    const pageConfig = seoConfig.pages.blog;
+
     return (
         <>
             <SEO
-                title="IB Education Blog – Tips & Resources | IB Tutoring Bali"
-                description="Expert insights on the International Baccalaureate in Bali. Exam tips, school guides, and curriculum updates for PYP, MYP, and DP."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero

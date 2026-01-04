@@ -4,6 +4,7 @@ import { GraduationCap, BarChart, Book, Award } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 import dpImg from '../assets/dp_studying_focused_1767354526083.png';
 
 const DP = () => {
@@ -13,11 +14,14 @@ const DP = () => {
         { question: "Can you help with CAS?", answer: "Yes! We help brainstorm 'creative' and 'service' ideas that are unique to Bali (e.g., coral restoration projects) rather than generic baking sales." }
     ];
 
+    const pageConfig = seoConfig.pages.dp;
+
     return (
         <>
             <SEO
-                title="IB Diploma Programme (DP) Tutoring Bali – The Gold Standard"
-                description="Elite tutoring for the IB Diploma Programme. We specialize in Math AA/AI, Sciences, and the Core (EE, TOK, CAS). Secure your university placement."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero

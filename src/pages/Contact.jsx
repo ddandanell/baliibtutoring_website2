@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -28,11 +29,14 @@ const Contact = () => {
         { question: "How quickly can we start?", answer: "Usually within 48 hours of the match being made." }
     ];
 
+    const pageConfig = seoConfig.pages.contact;
+
     return (
         <>
             <SEO
-                title="Contact Bali IB Tutoring – Book Your Consultation"
-                description="Get in touch to schedule a free consultation. We support students in Canggu, Ubud, Sanur, and online."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero
