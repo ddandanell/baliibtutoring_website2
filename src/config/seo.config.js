@@ -6,7 +6,7 @@
 const seoConfig = {
     // Site Information
     siteName: 'Bali IB Tutoring',
-    baseUrl: 'https://baliibtutoring.com',
+    baseUrl: 'https://baliibtutoring.store',
     location: 'Bali, Indonesia',
     
     // Default Meta Tags

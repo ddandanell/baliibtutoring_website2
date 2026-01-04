@@ -147,8 +147,8 @@ Every page follows best practices:
    - og-image.jpg (1200x630px for social sharing)
 
 2. **Submit to Google Search Console**:
-   - Add property for baliibtutoring.com
-   - Submit sitemap: `https://baliibtutoring.com/sitemap.xml`
+   - Add property for baliibtutoring.store
+   - Submit sitemap: `https://baliibtutoring.store/sitemap.xml`
 
 3. **Validate Implementation**:
    - Run Lighthouse audit (should score 90-100 for SEO)
