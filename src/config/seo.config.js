@@ -14,7 +14,7 @@ const seoConfig = {
     defaultDescription: 'Expert IB tutoring in Bali for PYP, MYP, and Diploma Programme students. Professional support in Canggu, Ubud, Sanur, and beyond.',
     
     // Social Media / Open Graph
-    defaultOgImage: '/og-image.jpg', // Will be created
+    defaultOgImage: '/og-image.jpg', // TODO: Create 1200x630px OG image for social sharing
     twitterHandle: '@baliibtutoring',
     
     // Business Information (for Schema.org)
@@ -43,8 +43,8 @@ const seoConfig = {
             'Jimbaran'
         ],
         priceRange: '$$-$$$',
-        telephone: '+62 812-3456-7890',
-        email: 'hello@baliibtutoring.com',
+        telephone: '+62 812-3456-7890', // NOTE: Verify this is the correct contact number
+        email: 'hello@baliibtutoring.com', // NOTE: Verify this is the correct email
         openingHours: 'Mo-Fr 09:00-18:00',
         hasOfferCatalog: [
             {

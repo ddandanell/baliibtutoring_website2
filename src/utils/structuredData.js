@@ -56,10 +56,7 @@ export const generateBusinessSchema = () => {
                 }
             }))
         },
-        "knowsAbout": business.knowsAbout,
-        "sameAs": [
-            // Add social media profiles here when available
-        ]
+        "knowsAbout": business.knowsAbout
     };
 };
 
