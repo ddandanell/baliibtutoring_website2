@@ -83,38 +83,38 @@ const seoConfig = {
             path: '/'
         },
         pyp: {
-            title: 'IB PYP Tutoring Bali – Primary Years Programme Support | Bali IB Tutoring - Canggu & Ubud',
-            description: 'Expert PYP tutors in Bali helping children aged 3-12 with literacy, numeracy, inquiry projects, and PYP Exhibition. Building strong foundations for the IB journey in Canggu, Ubud, and Sanur.',
+            title: 'PYP Tutoring Bali - Primary Years Support | Bali IB Tutoring',
+            description: 'Expert PYP tutors in Bali for ages 3-12. Literacy, numeracy, inquiry projects & PYP Exhibition support in Canggu, Ubud, and Sanur.',
             keywords: ['PYP tutoring Bali', 'Primary Years Programme', 'IB primary school', 'literacy tutoring', 'numeracy support', 'PYP Exhibition'],
             path: '/pyp-tutoring'
         },
         myp: {
-            title: 'IB MYP Tutoring Bali – Middle Years Programme Support | Bali IB Tutoring - Canggu & Sanur',
-            description: 'Comprehensive MYP tutoring for students aged 11-16 in Bali. Subject support, Personal Project guidance, and eAssessment preparation. Expert help for all eight subject groups.',
+            title: 'MYP Tutoring Bali - Middle Years Support | Bali IB Tutoring',
+            description: 'MYP tutoring for ages 11-16 in Bali. Personal Project guidance, eAssessment prep, and support for all eight subject groups.',
             keywords: ['MYP tutoring Bali', 'Middle Years Programme', 'Personal Project', 'eAssessments', 'IB middle school'],
             path: '/myp-tutoring'
         },
         dp: {
-            title: 'IB Diploma Programme (DP) Tutoring Bali – The Gold Standard | Bali IB Tutoring - Ubud',
-            description: 'Elite tutoring for the IB Diploma Programme in Bali. We specialize in Math AA/AI, Sciences, Languages, and the Core (EE, TOK, CAS). Secure your university placement with expert DP support.',
+            title: 'DP Tutoring Bali - Diploma Programme Support | Bali IB Tutoring',
+            description: 'Elite IB Diploma tutoring in Bali. Math AA/AI, Sciences, Languages, and Core (EE, TOK, CAS) support. Secure your university placement.',
             keywords: ['DP tutoring Bali', 'Diploma Programme', 'IB Math', 'Extended Essay', 'TOK', 'Internal Assessments', 'university preparation'],
             path: '/diploma-programme-tutoring'
         },
         locations: {
-            title: 'IB Tutoring Locations Bali – Canggu, Ubud, Sanur & More | Bali IB Tutoring',
-            description: 'We offer villa-based IB tutoring across Bali. Specific support for families in Canggu (CCS), Ubud (Green School), Sanur (BIS), Seminyak, and Uluwatu. Island-wide educational support.',
+            title: 'IB Tutoring Locations in Bali - Canggu, Ubud, Sanur & More',
+            description: 'Villa-based IB tutoring across Bali. Support for families in Canggu (CCS), Ubud (Green School), Sanur (BIS), Seminyak, and Uluwatu.',
             keywords: ['IB tutoring Canggu', 'IB tutoring Ubud', 'IB tutoring Sanur', 'villa-based tutoring', 'Bali locations'],
             path: '/locations'
         },
         blog: {
             title: 'IB Education Blog – Tips & Resources | Bali IB Tutoring',
-            description: 'Expert insights on the International Baccalaureate in Bali. Exam tips, school guides, and curriculum updates for PYP, MYP, and DP students and families.',
+            description: 'Expert insights on the IB in Bali. Exam tips, school guides, and curriculum updates for PYP, MYP, and DP students.',
             keywords: ['IB blog', 'IB tips', 'exam preparation', 'school guides', 'Bali schools', 'IB resources'],
             path: '/blog'
         },
         contact: {
             title: 'Contact Bali IB Tutoring – Book Your Free Consultation',
-            description: 'Get in touch to schedule a free consultation for IB tutoring in Bali. We support PYP, MYP, and DP students in Canggu, Ubud, Sanur, and online. Start your journey to academic excellence.',
+            description: 'Schedule a free IB tutoring consultation in Bali. We support PYP, MYP, and DP students in Canggu, Ubud, Sanur, and online.',
             keywords: ['contact IB tutor', 'free consultation', 'book tutoring', 'Bali tutoring inquiry'],
             path: '/contact'
         }
