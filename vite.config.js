@@ -19,6 +19,8 @@ export default defineConfig({
       }
     },
     // Increase chunk size warning limit (default is 500kb)
-    chunkSizeWarningLimit: 1000
+    chunkSizeWarningLimit: 1000,
+    // Optimize assets
+    assetsInlineLimit: 4096, // Inline assets smaller than 4kb
   }
 })
