@@ -4,6 +4,8 @@ import { BookOpen, MapPin, Users, GraduationCap, Sun } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
+import { generateBusinessSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 import riceFieldsImg from '../assets/bali_rice_fields_learning_1767354545877.png';
 
@@ -14,11 +16,16 @@ const Home = () => {
         { question: "Are your tutors qualified teachers?", answer: "We require all our tutors to have either IB teaching qualification or significant proven experience with the IB curriculum intricacies." }
     ];
 
+    const pageConfig = seoConfig.pages.home;
+    const businessSchema = generateBusinessSchema();
+
     return (
         <>
             <SEO
-                title="IB Tutoring in Bali – Expert PYP, MYP & Diploma Programme Support"
-                description="The ultimate resource for IB tutoring in Bali. Our expert tutors support students from PYP through to the Diploma Programme (DP) and Career-related Programme (CP). We offer villa-based and online private tuition in Canggu, Ubud, Sanur, Seminyak, and beyond."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
+                schemaData={businessSchema}
             />
 
             <Hero

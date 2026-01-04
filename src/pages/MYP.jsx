@@ -4,6 +4,7 @@ import { Microscope, Globe, Calculator, PenTool, Layout } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 import mypImg from '../assets/myp_science_experiment_1767354510028.png';
 
 const MYP = () => {
@@ -13,11 +14,14 @@ const MYP = () => {
         { question: "Do you help with eAssessments?", answer: "Yes. We have specific software to simulate the onscreen exam environment for Math, Sciences, and History." }
     ];
 
+    const pageConfig = seoConfig.pages.myp;
+
     return (
         <>
             <SEO
-                title="IB MYP Tutoring Bali – Middle Years Programme Support"
-                description="Comprehensive MYP tutoring for students aged 11-16. Subject support, Personal Project guidance, and eAssessment preparation in Bali."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero

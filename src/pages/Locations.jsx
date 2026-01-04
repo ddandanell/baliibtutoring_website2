@@ -4,6 +4,7 @@ import { MapPin, Navigation } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import seoConfig from '../config/seo.config';
 import riceImg from '../assets/bali_rice_fields_learning_1767354545877.png';
 
 const Locations = () => {
@@ -13,11 +14,14 @@ const Locations = () => {
         { question: "Do you cover Nusa Dua?", answer: "Yes, we have a dedicated team for the Nusa Dua / Jimbaran area." }
     ];
 
+    const pageConfig = seoConfig.pages.locations;
+
     return (
         <>
             <SEO
-                title="IB Tutoring Locations Bali – Canggu, Ubud, Sanur & More"
-                description="We offer villa-based IB tutoring across Bali. Specific support for families in Canggu (CCS), Ubud (Green School), Sanur (BIS), and Uluwatu."
+                title={pageConfig.title}
+                description={pageConfig.description}
+                keywords={pageConfig.keywords}
             />
 
             <Hero
