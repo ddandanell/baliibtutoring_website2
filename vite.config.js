@@ -24,3 +24,4 @@ export default defineConfig({
     assetsInlineLimit: 4096, // Inline assets smaller than 4kb
   }
 })
+

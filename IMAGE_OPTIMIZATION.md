@@ -23,8 +23,9 @@ If you need more control over image optimization, consider:
 
 1. **Convert to WebP format** (80-90% smaller than PNG):
    ```bash
-   # Using sharp-cli or online tools
-   npx @squoosh/cli --webp auto src/assets/*.png
+   # Using ImageMagick, sharp, or online conversion tools
+   # Example with sharp-cli (if installed):
+   # npx sharp-cli -i "src/assets/*.png" -o "src/assets/" -f webp
    ```
 
 2. **Use Responsive Images**: For critical images, create multiple sizes:
