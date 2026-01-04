@@ -127,13 +127,13 @@ const seoConfig = {
         },
         ubudTutoring: {
             title: 'IB Tutoring Ubud - Expert PYP, MYP & DP Support | Bali IB Tutoring',
-            description: 'Professional IB tutoring in Ubud, Bali. Villa-based PYP, MYP, and Diploma Programme support in the cultural heart of Bali. Expert tutors for Green School and Bali Island School students.',
+            description: 'Professional IB tutoring in Ubud, Bali. Villa-based PYP, MYP, and Diploma Programme support. Expert tutors for Green School and Bali Island School students.',
             keywords: ['IB tutoring Ubud', 'IB tutor Ubud', 'Green School tutoring', 'PYP tutoring Ubud', 'MYP tutoring Ubud', 'DP tutoring Ubud', 'villa tutoring Ubud', 'holistic education support'],
             path: '/ubud-ib-tutoring'
         },
         sanurTutoring: {
             title: 'IB Tutoring Sanur - Expert PYP, MYP & DP Support | Bali IB Tutoring',
-            description: 'Professional IB tutoring in Sanur, Bali. Family-friendly PYP, MYP, and Diploma Programme support in Bali\'s relaxed beachside community. Expert tutors for expat families.',
+            description: 'Professional IB tutoring in Sanur, Bali. Family-friendly PYP, MYP, and Diploma Programme support in Bali\'s beachside community. Expert tutors for expat families.',
             keywords: ['IB tutoring Sanur', 'IB tutor Sanur', 'PYP tutoring Sanur', 'MYP tutoring Sanur', 'DP tutoring Sanur', 'expat tutoring Bali', 'beachside tutoring', 'family education Sanur'],
             path: '/sanur-ib-tutoring'
         },
