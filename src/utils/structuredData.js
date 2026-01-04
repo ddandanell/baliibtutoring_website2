@@ -47,7 +47,7 @@ export const generateBusinessSchema = () => {
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "IB Tutoring Services",
-            "itemListElement": business.hasOfferCatalog.map((service, index) => ({
+            "itemListElement": business.hasOfferCatalog.map((service) => ({
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
