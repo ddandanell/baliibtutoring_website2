@@ -55,6 +55,7 @@ const Contact = () => {
                                 <li><strong>Step 2: The Match</strong><br />We select a tutor with the specific subject expertise and teaching style that fits.</li>
                                 <li><strong>Step 3: The Plan</strong><br />We create a roadmap for the term, whether it is "catch-up" or "get ahead".</li>
                             </ol>
+                            <p className="mt-2"><em>Looking for general private tutoring outside of IB curriculum? We recommend our partners at <a href="https://privatetutoringbali.com/" target="_blank" rel="noopener noreferrer" className="text-primary">Private Tutoring Bali</a>.</em></p>
                         </div>
 
                         <div className="mt-2">

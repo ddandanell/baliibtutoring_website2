@@ -36,6 +36,12 @@ const Footer = () => {
                             <a href="https://baliprivatetutors.com" target="_blank" rel="noopener noreferrer" className="text-secondary">baliprivatetutors.com</a>
                         </div>
                     </div>
+                    <div className="footer-col">
+                        <h4>Our Partners</h4>
+                        <ul>
+                            <li><a href="https://privatetutoringbali.com/" target="_blank" rel="noopener noreferrer">Premier Private Tutoring Bali</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="footer-bottom text-center">
                     <p>&copy; {new Date().getFullYear()} Bali IB Tutoring. All rights reserved.</p>
