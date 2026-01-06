@@ -166,6 +166,43 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* New Specialized Services Section */}
+            <section className="section-py container bg-light">
+                <div className="section-header text-center">
+                    <h2>Specialized IB Tutoring Services</h2>
+                    <p className="lead">Explore our comprehensive range of subject-specific and location-based tutoring options</p>
+                </div>
+
+                <div className="content-block">
+                    <div className="grid-3">
+                        <div className="card">
+                            <h4>Location-Based Tutoring</h4>
+                            <ul className="text-sm">
+                                <li><Link to="/canggu-ib-tutoring" className="text-secondary">IB Tutoring in Canggu</Link> - Villa-based support in Bali's digital nomad hub</li>
+                                <li><Link to="/ubud-ib-tutoring" className="text-secondary">IB Tutoring in Ubud</Link> - Holistic education meets IB excellence</li>
+                                <li><Link to="/sanur-ib-tutoring" className="text-secondary">IB Tutoring in Sanur</Link> - Family-friendly support for expat households</li>
+                            </ul>
+                        </div>
+                        <div className="card">
+                            <h4>Subject Expertise</h4>
+                            <ul className="text-sm">
+                                <li><Link to="/ib-math-tutoring" className="text-secondary">IB Mathematics Tutoring</Link> - Expert support for AA, AI, SL & HL</li>
+                                <li><Link to="/diploma-programme-tutoring" className="text-secondary">Extended Essay Support</Link> - Research, writing & mentorship</li>
+                                <li><Link to="/diploma-programme-tutoring" className="text-secondary">Theory of Knowledge</Link> - Critical thinking mastery</li>
+                            </ul>
+                        </div>
+                        <div className="card">
+                            <h4>Flexible Learning Options</h4>
+                            <ul className="text-sm">
+                                <li><Link to="/online-tutoring" className="text-secondary">Online IB Tutoring</Link> - World-class support from anywhere</li>
+                                <li><Link to="/exam-preparation" className="text-secondary">Exam Preparation</Link> - Intensive revision & mock exams</li>
+                                <li><Link to="/contact" className="text-secondary">Group Tutoring</Link> - Cost-effective collaborative learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <FAQSection faqs={faqs} />
 
             <div className="text-center py-8">

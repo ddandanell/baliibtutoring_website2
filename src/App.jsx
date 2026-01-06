@@ -8,6 +8,12 @@ import DP from './pages/DP';
 import Locations from './pages/Locations';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import CangguTutoring from './pages/CangguTutoring';
+import UbudTutoring from './pages/UbudTutoring';
+import SanurTutoring from './pages/SanurTutoring';
+import IBMathTutoring from './pages/IBMathTutoring';
+import OnlineTutoring from './pages/OnlineTutoring';
+import ExamPreparation from './pages/ExamPreparation';
 import ScrollToTop from './components/ui/ScrollToTop';
 
 function App() {
@@ -25,6 +31,15 @@ function App() {
                         <Route path="/locations" element={<Locations />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/contact" element={<Contact />} />
+                        {/* Location-specific pages */}
+                        <Route path="/canggu-ib-tutoring" element={<CangguTutoring />} />
+                        <Route path="/ubud-ib-tutoring" element={<UbudTutoring />} />
+                        <Route path="/sanur-ib-tutoring" element={<SanurTutoring />} />
+                        {/* Subject-specific pages */}
+                        <Route path="/ib-math-tutoring" element={<IBMathTutoring />} />
+                        {/* Service-specific pages */}
+                        <Route path="/online-tutoring" element={<OnlineTutoring />} />
+                        <Route path="/exam-preparation" element={<ExamPreparation />} />
                     </Routes>
                 </main>
                 <Footer />

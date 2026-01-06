@@ -48,7 +48,7 @@ const Locations = () => {
                         <ul className="list-disc text-sm">
                             <li>High demand for <Link to="/diploma-programme-tutoring" className="text-primary">Math AA</Link> and <Link to="/diploma-programme-tutoring" className="text-primary">Business Management</Link>.</li>
                         </ul>
-                        <Link to="/contact" className="btn btn-outline btn-sm mt-2">Book in Canggu</Link>
+                        <Link to="/canggu-ib-tutoring" className="btn btn-primary btn-sm mt-2">Learn More About Canggu Tutoring</Link>
                     </div>
 
                     {/* Sanur */}
@@ -61,7 +61,7 @@ const Locations = () => {
                         <ul className="list-disc text-sm">
                             <li><Link to="/pyp-tutoring" className="text-primary">PYP Exhibition</Link> mentorship and <Link to="/diploma-programme-tutoring" className="text-primary">DP support</Link>.</li>
                         </ul>
-                        <Link to="/contact" className="btn btn-outline btn-sm mt-2">Book in Sanur</Link>
+                        <Link to="/sanur-ib-tutoring" className="btn btn-primary btn-sm mt-2">Learn More About Sanur Tutoring</Link>
                     </div>
 
                     {/* Ubud */}
@@ -74,7 +74,7 @@ const Locations = () => {
                         <ul className="list-disc text-sm">
                             <li>Aligning project-based learning with <Link to="/diploma-programme-tutoring" className="text-primary">IB criteria</Link>.</li>
                         </ul>
-                        <Link to="/contact" className="btn btn-outline btn-sm mt-2">Book in Ubud</Link>
+                        <Link to="/ubud-ib-tutoring" className="btn btn-primary btn-sm mt-2">Learn More About Ubud Tutoring</Link>
                     </div>
 
                     {/* Uluwatu */}
