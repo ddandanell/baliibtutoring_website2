@@ -31,10 +31,6 @@ const Footer = () => {
                         <h4>Contact</h4>
                         <p>hello@baliibtutoring.com</p>
                         <p>+62 812-3456-7890</p>
-                        <div className="microsites mt-2">
-                            <small>Part of the Bali Education Group:</small><br />
-                            <a href="https://baliprivatetutors.com" target="_blank" rel="noopener noreferrer" className="text-secondary">baliprivatetutors.com</a>
-                        </div>
                     </div>
                 </div>
                 <div className="footer-bottom text-center">
