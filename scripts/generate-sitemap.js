@@ -25,6 +25,8 @@ const routes = [
     // Service-specific pages
     { path: '/online-tutoring', priority: '0.9', changefreq: 'monthly' },
     { path: '/exam-preparation', priority: '0.9', changefreq: 'monthly' },
+    // Utility pages
+    { path: '/sitemap', priority: '0.5', changefreq: 'monthly' },
 ];
 
 function generateSitemap() {
@@ -51,8 +53,22 @@ function generateRobotsTxt() {
 User-agent: *
 Allow: /
 
+# Crawl rate optimization
+Crawl-delay: 1
+
 # Disallow API routes if any exist in the future
 Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Allow important resources for better indexing
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
 
 # Sitemap location
 Sitemap: ${baseUrl}/sitemap.xml

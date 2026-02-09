@@ -5,80 +5,86 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://baliibtutoring.store/</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/pyp-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/myp-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/diploma-programme-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/locations</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/blog</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/contact</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/canggu-ib-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/ubud-ib-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/sanur-ib-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/ib-math-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/online-tutoring</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://baliibtutoring.store/exam-preparation</loc>
-        <lastmod>2026-01-04</lastmod>
+        <lastmod>2026-02-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://baliibtutoring.store/sitemap</loc>
+        <lastmod>2026-02-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>

@@ -4,7 +4,11 @@ import { BookOpen, Star, Brain } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import pypImg from '../assets/pyp_reading_bali_1767354491003.png';
 
 const PYP = () => {
@@ -15,6 +19,9 @@ const PYP = () => {
     ];
 
     const pageConfig = seoConfig.pages.pyp;
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/pyp-tutoring'];
+    const relatedLinks = relatedLinksConfig.pyp;
 
     return (
         <>
@@ -22,7 +29,12 @@ const PYP = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Nurturing Curious Minds: IB PYP Tutoring in Bali"
@@ -121,6 +133,11 @@ const PYP = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

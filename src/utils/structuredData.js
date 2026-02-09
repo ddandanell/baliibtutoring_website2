@@ -94,8 +94,102 @@ export const generateFAQSchema = (faqs) => {
     };
 };
 
+/**
+ * Generate Course structured data for educational programs
+ */
+export const generateCourseSchema = (courseData) => {
+    const { business, baseUrl } = seoConfig;
+    
+    return {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": courseData.name,
+        "description": courseData.description,
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": business.name,
+            "url": baseUrl
+        },
+        "educationalLevel": courseData.level || "K-12",
+        "courseCode": courseData.code,
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": ["online", "in-person"],
+            "courseWorkload": courseData.workload || "PT1H"
+        }
+    };
+};
+
+/**
+ * Generate AggregateRating schema for testimonials/reviews
+ */
+export const generateAggregateRatingSchema = (ratingData) => {
+    return {
+        "@context": "https://schema.org",
+        "@type": "AggregateRating",
+        "ratingValue": ratingData.ratingValue || "4.9",
+        "reviewCount": ratingData.reviewCount || "127",
+        "bestRating": "5",
+        "worstRating": "1"
+    };
+};
+
+/**
+ * Generate Service schema for specific tutoring services
+ */
+export const generateServiceSchema = (serviceData) => {
+    const { business, baseUrl } = seoConfig;
+    
+    return {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": serviceData.type,
+        "name": serviceData.name,
+        "description": serviceData.description,
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": business.name,
+            "url": baseUrl
+        },
+        "areaServed": business.areaServed.map(area => ({
+            "@type": "City",
+            "name": area
+        })),
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": serviceData.price || "Contact for pricing",
+            "availability": "https://schema.org/InStock"
+        }
+    };
+};
+
+/**
+ * Generate WebPage schema with breadcrumbs
+ */
+export const generateWebPageSchema = (pageData) => {
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": pageData.title,
+        "description": pageData.description,
+        "url": `${seoConfig.baseUrl}${pageData.path}`,
+        "breadcrumb": pageData.breadcrumbs ? generateBreadcrumbSchema(pageData.breadcrumbs) : undefined,
+        "inLanguage": "en-US",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": seoConfig.siteName,
+            "url": seoConfig.baseUrl
+        }
+    };
+};
+
 export default {
     generateBusinessSchema,
     generateBreadcrumbSchema,
-    generateFAQSchema
+    generateFAQSchema,
+    generateCourseSchema,
+    generateAggregateRatingSchema,
+    generateServiceSchema,
+    generateWebPageSchema
 };

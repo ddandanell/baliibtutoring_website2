@@ -4,7 +4,11 @@ import { Wifi, Video, Globe, Clock, BookOpen, Award, Shield, Zap } from 'lucide-
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const OnlineTutoring = () => {
@@ -32,6 +36,9 @@ const OnlineTutoring = () => {
         description: 'Professional online IB tutoring for students worldwide. High-quality virtual PYP, MYP, and Diploma Programme support via Zoom. Flexible scheduling, expert tutors, proven results.',
         keywords: 'online IB tutoring, virtual IB tutor, online PYP tutoring, online MYP tutoring, online DP tutoring, remote IB support, Zoom tutoring, online Extended Essay help'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/online-tutoring'];
+    const relatedLinks = relatedLinksConfig.onlineTutoring;
 
     return (
         <>
@@ -39,7 +46,12 @@ const OnlineTutoring = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Expert Online IB Tutoring from Bali"
@@ -384,6 +396,11 @@ const OnlineTutoring = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

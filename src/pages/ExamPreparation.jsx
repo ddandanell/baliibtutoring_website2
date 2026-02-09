@@ -4,7 +4,11 @@ import { Target, BookOpen, Award, TrendingUp, CheckCircle, AlertCircle } from 'l
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const ExamPreparation = () => {
@@ -32,6 +36,9 @@ const ExamPreparation = () => {
         description: 'Comprehensive IB exam preparation in Bali. Intensive revision courses, past papers, mock exams, and expert strategies for PYP, MYP, and DP assessments. Achieve your best IB results.',
         keywords: 'IB exam preparation, IB revision Bali, IB mock exams, DP exam prep, MYP eAssessments, IB past papers, exam technique, IB study skills'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/exam-preparation'];
+    const relatedLinks = relatedLinksConfig.examPreparation;
 
     return (
         <>
@@ -39,7 +46,12 @@ const ExamPreparation = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="IB Exam Preparation Excellence in Bali"
@@ -439,6 +451,11 @@ const ExamPreparation = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };
