@@ -4,7 +4,11 @@ import { Microscope, Globe, Calculator, PenTool, Layout } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import mypImg from '../assets/myp_science_experiment_1767354510028.png';
 
 const MYP = () => {
@@ -15,6 +19,9 @@ const MYP = () => {
     ];
 
     const pageConfig = seoConfig.pages.myp;
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/myp-tutoring'];
+    const relatedLinks = relatedLinksConfig.myp;
 
     return (
         <>
@@ -22,7 +29,12 @@ const MYP = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Mastering the Middle Years: IB MYP Tutoring"
@@ -86,6 +98,11 @@ const MYP = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };
