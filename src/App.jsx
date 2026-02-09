@@ -14,6 +14,7 @@ import SanurTutoring from './pages/SanurTutoring';
 import IBMathTutoring from './pages/IBMathTutoring';
 import OnlineTutoring from './pages/OnlineTutoring';
 import ExamPreparation from './pages/ExamPreparation';
+import Sitemap from './pages/Sitemap';
 import ScrollToTop from './components/ui/ScrollToTop';
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
                         {/* Service-specific pages */}
                         <Route path="/online-tutoring" element={<OnlineTutoring />} />
                         <Route path="/exam-preparation" element={<ExamPreparation />} />
+                        {/* Utility pages */}
+                        <Route path="/sitemap" element={<Sitemap />} />
                     </Routes>
                 </main>
                 <Footer />
