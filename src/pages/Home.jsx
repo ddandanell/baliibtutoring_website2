@@ -4,8 +4,10 @@ import { BookOpen, MapPin, Users, GraduationCap, Sun } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
-import { generateBusinessSchema } from '../utils/structuredData';
+import { relatedLinksConfig } from '../config/internalLinks.config';
+import { generateBusinessSchema, generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 import riceFieldsImg from '../assets/bali_rice_fields_learning_1767354545877.png';
 
@@ -18,6 +20,8 @@ const Home = () => {
 
     const pageConfig = seoConfig.pages.home;
     const businessSchema = generateBusinessSchema();
+    const faqSchema = generateFAQSchema(faqs);
+    const relatedLinks = relatedLinksConfig.home;
 
     return (
         <>
@@ -25,7 +29,7 @@ const Home = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
-                schemaData={businessSchema}
+                schemaData={[businessSchema, faqSchema]}
             />
 
             <Hero
@@ -204,6 +208,11 @@ const Home = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
 
             <div className="text-center py-8">
                 <Link to="/contact" className="btn btn-primary btn-lg">Start Your Journey Today</Link>

@@ -4,7 +4,11 @@ import { MapPin, BookOpen, Users, Award, Anchor, Coffee } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const SanurTutoring = () => {
@@ -32,6 +36,9 @@ const SanurTutoring = () => {
         description: 'Professional IB tutoring in Sanur, Bali. Family-friendly PYP, MYP, and Diploma Programme support in Bali\'s relaxed beachside community. Expert tutors for expat families.',
         keywords: 'IB tutoring Sanur, IB tutor Sanur, PYP tutoring Sanur, MYP tutoring Sanur, DP tutoring Sanur, expat tutoring Bali, beachside tutoring, family education Sanur'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/sanur-ib-tutoring'];
+    const relatedLinks = relatedLinksConfig.sanurTutoring;
 
     return (
         <>
@@ -39,7 +46,12 @@ const SanurTutoring = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Expert IB Tutoring in Sanur"
@@ -368,6 +380,11 @@ const SanurTutoring = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

@@ -4,7 +4,11 @@ import { MapPin, BookOpen, Users, Award, TreePine, Heart } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const UbudTutoring = () => {
@@ -32,6 +36,9 @@ const UbudTutoring = () => {
         description: 'Professional IB tutoring in Ubud, Bali. Villa-based PYP, MYP, and Diploma Programme support in the cultural heart of Bali. Expert tutors for Green School and Bali Island School students.',
         keywords: 'IB tutoring Ubud, IB tutor Ubud, Green School tutoring, PYP tutoring Ubud, MYP tutoring Ubud, DP tutoring Ubud, villa tutoring Ubud, holistic education support'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/ubud-ib-tutoring'];
+    const relatedLinks = relatedLinksConfig.ubudTutoring;
 
     return (
         <>
@@ -39,7 +46,12 @@ const UbudTutoring = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Expert IB Tutoring in Ubud"
@@ -325,6 +337,11 @@ const UbudTutoring = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

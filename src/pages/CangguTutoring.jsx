@@ -4,7 +4,11 @@ import { MapPin, BookOpen, Users, Award, Home as HomeIcon, Waves } from 'lucide-
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const CangguTutoring = () => {
@@ -32,6 +36,9 @@ const CangguTutoring = () => {
         description: 'Professional IB tutoring in Canggu, Bali. Villa-based PYP, MYP, and Diploma Programme support in Berawa, Batu Bolong, and Pererenan. Flexible scheduling for expat families.',
         keywords: 'IB tutoring Canggu, IB tutor Berawa, Canggu Community School tutoring, PYP tutoring Canggu, MYP tutoring Canggu, DP tutoring Canggu, villa tutoring Bali, digital nomad tutoring'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/canggu-ib-tutoring'];
+    const relatedLinks = relatedLinksConfig.cangguTutoring;
 
     return (
         <>
@@ -39,7 +46,12 @@ const CangguTutoring = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Expert IB Tutoring in Canggu"
@@ -257,6 +269,11 @@ const CangguTutoring = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

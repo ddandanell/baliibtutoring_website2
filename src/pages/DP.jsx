@@ -4,7 +4,11 @@ import { GraduationCap, BarChart, Book, Award } from 'lucide-react';
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import dpImg from '../assets/dp_studying_focused_1767354526083.png';
 
 const DP = () => {
@@ -15,6 +19,9 @@ const DP = () => {
     ];
 
     const pageConfig = seoConfig.pages.dp;
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/diploma-programme-tutoring'];
+    const relatedLinks = relatedLinksConfig.dp;
 
     return (
         <>
@@ -22,7 +29,12 @@ const DP = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="The Final Sprint: IB Diploma Programme Support"
@@ -92,6 +104,11 @@ const DP = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };

@@ -4,7 +4,11 @@ import { Calculator, TrendingUp, Lightbulb, Award, CheckCircle, Target } from 'l
 import SEO from '../components/ui/SEO';
 import Hero from '../components/ui/Hero';
 import FAQSection from '../components/ui/FAQSection';
+import Breadcrumb from '../components/ui/Breadcrumb';
+import RelatedLinks from '../components/ui/RelatedLinks';
 import seoConfig from '../config/seo.config';
+import { breadcrumbsConfig, relatedLinksConfig } from '../config/internalLinks.config';
+import { generateFAQSchema } from '../utils/structuredData';
 import heroBg from '../assets/hero-bg.png';
 
 const IBMathTutoring = () => {
@@ -32,6 +36,9 @@ const IBMathTutoring = () => {
         description: 'Expert IB Mathematics tutoring in Bali. Specialized support for Analysis & Approaches (AA) and Applications & Interpretation (AI), both Standard and Higher Level. Internal Assessment help.',
         keywords: 'IB Math tutoring, IB Mathematics tutor Bali, Math AA tutoring, Math AI tutoring, IB Math HL, IB Math SL, Math Internal Assessment, IB math help Bali'
     };
+    const faqSchema = generateFAQSchema(faqs);
+    const breadcrumbs = breadcrumbsConfig['/ib-math-tutoring'];
+    const relatedLinks = relatedLinksConfig.ibMathTutoring;
 
     return (
         <>
@@ -39,7 +46,12 @@ const IBMathTutoring = () => {
                 title={pageConfig.title}
                 description={pageConfig.description}
                 keywords={pageConfig.keywords}
+                schemaData={faqSchema}
             />
+
+            <div className="container">
+                <Breadcrumb items={breadcrumbs} />
+            </div>
 
             <Hero
                 title="Expert IB Mathematics Tutoring in Bali"
@@ -380,6 +392,11 @@ const IBMathTutoring = () => {
             </section>
 
             <FAQSection faqs={faqs} />
+
+            <RelatedLinks 
+                links={relatedLinks}
+                title="Explore More IB Tutoring Services"
+            />
         </>
     );
 };
